@@ -1,8 +1,14 @@
+import Hero from "../components/Index/hero";
+import Nav from "../components/Index/nav";
+
+
 const Index = () => {
 
     return (
-            <div>
-            </div>
+        <header className="header">
+            <Nav />
+            <Hero />
+        </header>
     );
 }
 
