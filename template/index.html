@@ -24,7 +24,6 @@
             </div>
         </header>
 
-
         <section class="skills-box none">
             <nav class="header__nav">
                 <ul class="header__box-list">
@@ -35,7 +34,7 @@
                 </ul>
             </nav>
 
-            <h2 class="skills-box__title">Мои навыки</h2>
+            <h2 class="h2 skills-box__title">Мои навыки</h2>
             <ul class="skills">
                 <li class="skills__skill">
                     <img src="./img/skills/html.svg" alt="">
@@ -80,6 +79,99 @@
             </ul>
 
             <button class="loading-bar">Проекты</button>
+        </section>
+
+        <main class="projects-box none">
+            <nav class="header__nav">
+                <ul class="header__box-list">
+                    <li class="header__list"><a href="#">Обо мне</a></li>
+                    <li class="header__list"><a href="#">Навыки</a></li>
+                    <li class="header__list"><a href="#">Проекты</a></li>
+                    <li class="header__list"><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <h2 class="h2 projects-box__title">Мое портфолио</h2>
+            <div class="projects-container">
+                <ul class="projects">
+                    <li class="projects__project">
+                        <img class="projects__img" src="./img/projects/portfolio.png" alt="">
+                        <h3 class="projects__title">HTML5</h3>
+                    </li>
+                    <li class="projects__project">
+                        <img class="projects__img" src="./img/projects/portfolio.png" alt="">
+                        <h3 class="projects__title">HTML5</h3>
+                    </li>
+                    <li class="projects__project">
+                        <img class="projects__img" src="./img/projects/portfolio.png" alt="">
+                        <h3 class="projects__title">HTML5</h3>
+                    </li>
+                    <li class="projects__project">
+                        <img class="projects__img" src="./img/projects/portfolio.png" alt="">
+                        <h3 class="projects__title">HTML5</h3>
+                    </li>
+                    <li class="projects__project">
+                        <img class="projects__img" src="./img/projects/portfolio.png" alt="">
+                        <h3 class="projects__title">HTML5</h3>
+                    </li>
+                </ul>
+            </div>
+            <button class="loading-bar loading-bar_contact">Контакты</button>
+        </main>
+
+        <section class="contacts none">
+            <nav class="header__nav">
+                <ul class="header__box-list">
+                    <li class="header__list header__list_contacts"><a href="#">Обо мне</a></li>
+                    <li class="header__list header__list_contacts"><a href="#">Навыки</a></li>
+                    <li class="header__list header__list_contacts"><a href="#">Проекты</a></li>
+                    <li class="header__list header__list_contacts"><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <!-- <h2 class="h2 projects-box__title">Мое портфолио</h2> -->
+            <div class="contacts__container">
+                <div class="left-side">
+                    <h2 class="h2 left-side__title">Связаться со мной</h2>
+                    <ul class="left-side__box">
+                        <li class="left-side__li">
+                            <a class="left-side__link" target="_blank" href="mailto:nik.zhvalik@mail.ru">
+                                <img class="left-side__img" src="./img/contacts/email.png" alt="">
+                                <h4 class="left-side__subtitle">Email</h4>
+                                <p class="left-side__text">nik.zhvalik@mail.ru</p>
+                            </a>
+                        </li>
+                        <li class="left-side__li">
+                            <a class="left-side__link" target="_blank" href="https://wa.me/79154499346">
+                                <img class="left-side__img" src="./img/contacts/whatsapp.png" alt="">
+                                <h4 class="left-side__subtitle">Whatsapp</h4>
+                                <p class="left-side__text">+ 79154499346</p>
+                            </a>
+                        </li>
+                        <li class="left-side__li">
+                            <a class="left-side__link" target="_blank" href="https://t.me/Nikita_Zhvalik">
+                                <img class="left-side__img" src="./img/contacts/telegram.png" alt="">
+                                <h4 class="left-side__subtitle">Telegram</h4>
+                                <p class="left-side__text">t.me/Nikita_Zhvalik</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="right-side">
+                    <h2 class="h2 right-side__title">Отправить сообщение</h2>
+                    <form class="right-side__form" action="">
+                        <input class="right-side__input" placeholder="Имя" type="text">
+                        <input class="right-side__input" placeholder="Эл.адрес" type="email">
+                        <textarea class="right-side__textarea" name="" id="" cols="30" rows="13" placeholder="Сообщение"></textarea>
+                        <div class="btns__container">
+                            <button class="right-side__btn" type="submit">Отправить сообщение</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
         </section>
     </div>
 </body>

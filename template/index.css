@@ -31,6 +31,17 @@ body {
 	font-family: 'Nunito', sans-serif;
 }
 
+.h2 {
+	color: #FFF;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 72px;
+	letter-spacing: 0em;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px #FFF;
+	text-align: left;
+}
+
 .container {
 	width: 100vw;
 	height: 100vh;
@@ -158,12 +169,6 @@ body {
 .skills-box__title {
 	margin-top: 50px;
 	margin-bottom: 120px;
-	color: #FFF;
-	font-size: 48px;
-	font-weight: 700;
-	line-height: 72px;
-	letter-spacing: 0em;
-	text-align: left;
 }
 
 .skills {
@@ -183,13 +188,12 @@ body {
 	flex-direction: column;
     justify-content: center;
     align-items: center;
-	gap: 10px;
+	column-gap: 125px;
 }
 
 .skills__skill::before {
 	content: '';
 	position: absolute;
-	/* rotate: 100deg; */
 	top: -35px;
 	width: 120px;
     height: 150px;
@@ -202,3 +206,230 @@ body {
 
 
 /* skills */
+
+
+/* projects */
+.projects-box {
+	width: 100vw;
+	height: 100vh;
+	padding: 40px 60px;
+	background-image: url(./img/background-projects.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.projects-box__title {
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.projects-container {
+	display: flex;
+	justify-content: center;
+}
+
+.projects {
+	width: 1200px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.projects__project {
+	border: 1px solid #FFF;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	gap: 10px;
+}
+
+.projects__img {
+	width: 350px;
+	height: 220px;
+	padding: 5px;
+	border-radius: 20px;
+
+}
+
+.projects__title {
+	padding-bottom: 10px;
+	color: #FFF;
+}
+
+.loading-bar_contact {
+	margin-left: 350px;
+}
+/* projects */
+
+
+
+
+
+/* contacts */
+.contacts {
+	width: 100vw;
+	height: 100vh;
+	padding: 40px 60px;
+	background-image: url(./img/contacts/background-contacts.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.header__list_contacts {
+	position: relative;
+}
+
+.header__list_contacts::after{
+	content: '';
+	position: absolute;
+	top: -60px;
+	left: -20px;
+	width: 120px;
+    height: 140px;
+	z-index: -2;
+	background-image: url(./img/contacts/background-a-contacts.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+	transition: all ease-in 0.3s;
+	transform: rotate(90deg);
+}
+
+.contacts__container {
+	max-width: 1200px;
+	height: 70vh;
+	margin-top: 80px;
+	padding: 30px 60px;
+
+
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+
+	background-color: #FFF;
+	border-radius: 20px;
+}
+
+.left-side {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-side__title {
+	margin-bottom: 30px;
+
+	font-size: 36px;
+	line-height: 36px;
+
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px #000;
+}
+
+.right-side__title {
+	margin-bottom: 30px;
+
+	font-size: 36px;
+	line-height: 36px;
+
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px #000;
+}
+
+.left-side__li {
+	max-width: 200px;
+	padding: 15px;
+
+	border: 2px solid #000;
+	border-radius: 10px;
+
+	transition: box-shadow ease-in 0.3s;
+}
+
+.left-side__li:hover {
+	box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5); 
+}
+
+.left-side__li ~ .left-side__li {
+	margin-top: 30px;
+}
+
+.left-side__link {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side__img {
+	margin-bottom: 5px;
+}
+
+.left-side__subtitle {
+	font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+.left-side__text {
+    line-height: 27px;
+}
+
+.right-side__form {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.right-side__input {
+	width: 300px;
+	height: 45px;
+	padding: 3px 20px;
+
+	border: 2px solid #000;
+	border-radius: 10px;
+
+}
+
+.right-side__textarea {
+	width: 300px;
+	padding: 20px;
+    resize: none;
+	border: 2px solid #000;
+	border-radius: 10px;
+}
+
+.btns__container {
+	position: relative;
+
+	transition: all ease-in 0.3s;
+}
+
+.right-side__btn {
+	width: 160px;
+	min-height: 45px;
+	padding: 5px 15px;
+
+	background-color: #000;
+	border: 2px solid #000;
+	border-radius: 10px;
+
+	color: #FFF;
+
+	transition: all ease-in 0.3s;
+}
+
+.right-side__btn:hover {
+	box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5); 
+	background-color: #FFF;
+	color: #000;
+}
+/* contacts */
