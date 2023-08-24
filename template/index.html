@@ -223,9 +223,13 @@
                 <div class="right-side">
                   <h2 class="h2 right-side__title">Отправить сообщение</h2>
                   <form class="right-side__form" action="">
-                    <input class="right-side__input" placeholder="Имя" type="text" required/>
-                    <input class="right-side__input" placeholder="Эл.адрес" type="email" required/>
-                    <textarea class="right-side__textarea" name="" id="" cols="30" rows="13" placeholder="Сообщение" required ></textarea>
+                    <!-- <input type="hidden" name="project_name" value="portfolio-react"/>
+                    <input type="hidden" name="admin_email" value="nik.zhvalik@mail.ru"/>
+                    <input type="hidden" name="form_subject" value="page contacts"/> -->
+                     
+                    <input class="right-side__input" name="Name" placeholder="Имя" type="text" required/>
+                    <input class="right-side__input" name="Email"  placeholder="Эл.адрес" type="email" required/>
+                    <textarea class="right-side__textarea" name="Msg" id="" cols="30" rows="13" placeholder="Сообщение" required ></textarea>
                     <div class="btns__container">
                       <button class="right-side__btn" type="submit">
                         Отправить сообщение
