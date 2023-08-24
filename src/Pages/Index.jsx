@@ -1,13 +1,11 @@
-import Hero from "../components/Index/hero";
-import Nav from "../components/Index/nav";
-
+import About from "../components/About";
+import Nav from "../components/Nav";
 
 const Index = () => {
-
     return (
         <header className="header">
             <Nav />
-            <Hero />
+            <About />
         </header>
     );
 }
