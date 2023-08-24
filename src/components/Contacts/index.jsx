@@ -7,7 +7,7 @@ const ContactsRender = () => {
             <div className="contacts__box">
             <div className="contacts__container">
                 <LeftSide />
-                <RightSide />
+                {/* <RightSide /> */}
               </div>
         </div>
         </div>
