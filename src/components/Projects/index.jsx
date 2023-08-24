@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { projectsConst } from "./const";
 
 const ProjectsRender = () => {
@@ -14,7 +15,10 @@ const ProjectsRender = () => {
                 )}
                 </ul>
             </div>
-            </div>
+            <Link to='/contacts'>
+                <button className="btn-next btn-next_projects">Контакты</button>
+            </Link>
+        </div>
     );
 }
  

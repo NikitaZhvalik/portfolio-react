@@ -7,7 +7,7 @@ const LeftSide = () => {
         <ul className="left-side__box">
             {leftSideConst.map((contact) => 
                 <li key={contact.subtitle}>
-                <a className="left-side__link" target="_blank" href="https://github.com/NikitaZhvalik">
+                <a className="left-side__link" rel="noreferrer" target="_blank" href={contact.href}>
                     <img className="left-side__img" src={contact.img} alt="" />
                     <h4 className="left-side__subtitle">{contact.subtitle}</h4>
                     <p className="left-side__text">{contact.descr}</p>

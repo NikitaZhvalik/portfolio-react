@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { skillsConst } from "./const";
 
 const SkillsRender = () => {
@@ -12,6 +13,9 @@ const SkillsRender = () => {
                     </li>
                 )}
             </ul>
+            <Link to='/projects'>
+                <button className="btn-next">Проекты</button>
+            </Link>
         </div>
     );
 }

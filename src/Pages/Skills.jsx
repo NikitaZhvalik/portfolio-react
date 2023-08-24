@@ -6,7 +6,6 @@ const Skills = () => {
         <div className="skills-box">
             <Nav />
             <SkillsRender />
-            <button className="btn-next">Проекты</button>
         </div>
     );
 }

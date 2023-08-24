@@ -1,6 +1,7 @@
 @import './normalize.css';
 @import './nullstyles.css';
 
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
 
 @keyframes animateC {
 	0% {
@@ -418,12 +419,20 @@ body {
 	border-radius: 10px;
 }
 
+.right-side__input:focus {
+	box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5); 
+}
+
 .right-side__textarea {
 	width: 300px;
 	padding: 20px;
     resize: none;
 	border: 2px solid #000;
 	border-radius: 10px;
+}
+
+.right-side__textarea:focus {
+	box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5); 
 }
 
 .btns__container {
@@ -452,3 +461,33 @@ body {
 	color: #000;
 }
 /* contacts */
+
+/* not found */
+.notFound__container {
+	background-image: url(./../imgs/notFound/background-notFound.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.notFound__title {
+	font-size: 36px;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.notFound__message {
+	width: 330px;
+	font-size: 22px;
+	color: #ffffff;
+	text-align: center;
+}
+/* not found */

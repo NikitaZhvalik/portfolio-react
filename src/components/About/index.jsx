@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const About = () => {
     return (
         <div className="about">
@@ -11,7 +13,9 @@ const About = () => {
 				работу на постоянной основе в компании с современным подходом к
 				разработке и сплоченной командой.
 			</p>
-			<button className="btn-next">Навыки</button>
+			<Link to='/skills'>
+				<button className="btn-next">Навыки</button>
+			</Link>
         </div>
     );
 }

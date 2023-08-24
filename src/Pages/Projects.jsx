@@ -6,7 +6,6 @@ const Projects = () => {
         <div className="projects-box">
             <Nav />
             <ProjectsRender />
-            <button className="btn-next btn-next_projects">Контакты</button>
         </div>
     );
 }
