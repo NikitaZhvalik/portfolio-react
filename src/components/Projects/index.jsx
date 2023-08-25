@@ -15,9 +15,11 @@ const ProjectsRender = () => {
                 )}
                 </ul>
             </div>
-            <Link to='/contacts'>
-                <button className="btn-next btn-next_projects">Контакты</button>
-            </Link>
+            <div className="btn__container">
+                <Link to='/contacts'>
+                    <button className="btn-next btn-next_projects">Контакты</button>
+                </Link>
+            </div>
         </div>
     );
 }

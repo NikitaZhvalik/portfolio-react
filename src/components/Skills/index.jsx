@@ -13,9 +13,11 @@ const SkillsRender = () => {
                     </li>
                 )}
             </ul>
-            <Link to='/projects'>
-                <button className="btn-next">Проекты</button>
-            </Link>
+            <div className="btn__container">
+                <Link to='/projects'>
+                    <button className="btn-next">Проекты</button>
+                </Link>
+            </div>
         </div>
     );
 }
