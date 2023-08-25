@@ -9,7 +9,7 @@ const ProjectsRender = () => {
                 <ul className="projects">
                 {projectsConst.map((project) => 
                     <li className="project" key={project.name}>
-                    <img className="project__img" src={project.img} alt={project.name}/>
+                    <a href={project.link} target="_blink"><img className="project__img" src={project.img} alt={project.name}/></a>
                     <h3 className="projects__title">{project.name}</h3>
                     </li>
                 )}
