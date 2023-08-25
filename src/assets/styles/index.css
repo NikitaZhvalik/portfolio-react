@@ -1,8 +1,8 @@
 @import './normalize.css';
 @import './nullstyles.css';
 
-@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
-
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");  
+  
 @keyframes animateC {
 	0% {
 	  transform: rotate(0deg);
@@ -69,7 +69,7 @@ body {
 	height: 100vh;
 	padding: 40px 60px;
 
-	background-image: url(./../imgs/about/background-about.png);
+	background-image: url(./../imgs/about/background-about.png), url(./../imgs/about/background-about.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -113,6 +113,10 @@ body {
 
 .nav__list:hover::before {
 	opacity: 1;
+}
+
+.burger-btn {
+	display: none;
 }
 
 .about {
@@ -527,7 +531,12 @@ body {
 
 	/* about */
 	.header {
-		padding: 40px;
+		padding: 30px;
+
+		background-image: url(./../imgs/header/background-burger-menu.svg), url(./../imgs/about/background-about.png);
+		background-repeat: no-repeat;
+		background-position: top 5px left -35px, center;
+		background-size: 160px, cover;
 	}
 
 	.nav {
@@ -535,7 +544,7 @@ body {
 	}
 
 	.about {
-		margin-top: 30px;
+		margin-top: 40px;
 	}
 
 	.about__title {
@@ -551,7 +560,7 @@ body {
 		width: 280px;
 		margin-bottom: 30px;
 		padding-left: 15px;
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 30px;
 		color: #FFF;
 	
@@ -560,15 +569,22 @@ body {
 
 	/* skills */
 	.skills-box {
-		padding: 20px;
+		padding: 30px;
 		padding-bottom: 60px;
+
+		background-image: url(./../imgs/header/background-burger-menu.svg), url(./../imgs/skills/background-skills.png);
+		background-repeat: no-repeat;
+		background-position: top 5px left -35px, center;
+		background-size: 180px, cover;
 	}
 
 	.skills-box__title {
 		width: 280px;
-		padding-left: 45px;
-		margin-top: 240px;
+		padding-left: 35px;
+		margin-top: 200px;
 		margin-bottom: 60px;
+
+		line-height: 62px;
 	}
 
 	.skills {
@@ -579,8 +595,13 @@ body {
 	
 	/* projects */
 	.projects-box {
-		padding: 20px;
+		padding: 30px;
 		padding-bottom: 60px;
+
+		background-image: url(./../imgs/header/background-burger-menu.svg), url(./../imgs/projects/background-projects.png);
+		background-repeat: no-repeat;
+		background-position: top 5px left -35px, center;
+		background-size: 160px, cover;
 	}
 
 	.projects-box__title {
@@ -596,6 +617,121 @@ body {
 	.btn-next_projects {
 		margin-left: 0px;
 	}
+
+	/* contacts */
+	.contacts {
+		padding: 30px;
+		padding-bottom: 60px;
+
+		background-image: url(./../imgs/header/background-burger-menu.svg), url(./../imgs/contacts/background-contacts.png);
+		background-repeat: no-repeat;
+		background-position: top 5px left -35px, center;
+		background-size: 160px, cover;
+	}
+
+	.contacts__container {
+		margin-top: 30px;
+	}
+
+	/* burger-btn */
+
+
+	  
+	  
+	.burger-btn {
+		display: block;
+		width: 30px;
+		height: 24px;
+		margin-left: 20px;
+		position: relative;
+
+		z-index: 110;
+		cursor: pointer;
+	}
+
+	.burger-btn::before {
+		content: '';
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		width: 30px;
+		background-color: #000;
+		height: 2px;
+	}
+
+	.burger-btn span {
+		width: 30px;
+		height: 2px;
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #000;
+	}
+
+	.burger-btn::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		width: 30px;
+		background-color: #000;
+		height: 2px;
+	}
+
+	.menu, .menu-active{
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+	}
+
+	.menu {
+		transform: translateX(-100vw);
+	}
+
+	.menu-active {
+		transform: translateX(0);
+	}
+
+	.menu-active {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		touch-action: none;
+	}
+
+	.menu__content {
+		width: 100vw;
+		height: 100vh;
+		background-color: #3e3c3c;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.menu__header {
+		margin-bottom: 20px;
+		color: #FFF;
+		font-size: 32px;
+		border-bottom: 2px solid #FFF;
+		width: 180px;
+		text-align: center;
+	}
+
+	ul .burger-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #FFF;
+		font-size: 22px;
+		text-align: center;
+	}
+
+	.burger-link ~ .burger-link {
+		margin-top: 20px;
+	}
 }
-
-

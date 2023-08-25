@@ -1,7 +1,7 @@
 import About from "../components/About";
 import Nav from "../components/Nav";
 
-const Index = () => {
+const Index = () => {    
     return (
         <header className="header">
             <Nav />
