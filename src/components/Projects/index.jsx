@@ -4,7 +4,7 @@ import { projectsConst } from "./const";
 const ProjectsRender = () => {
     return (
         <div>
-            <h2 className="h2 projects-box__title">Мое портфолио</h2>
+            <h2 className="h2 projects-box__title">Мои проекты</h2>
             <div className="projects-container">
                 <ul className="projects">
                 {projectsConst.map((project) => 

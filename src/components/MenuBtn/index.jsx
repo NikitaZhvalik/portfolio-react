@@ -7,9 +7,6 @@ const MenuBtn = ({setMenuActive, menuActive}) => {
             <span></span>
             <div className={menuActive ? 'menu-active' : 'menu'}>
                 <div className="menu__content">
-                    <div className="menu__header">
-                        Навигация
-                    </div>
                     <ul>
                     {navConst.map((nav) => 
                         <li key={nav.name} className="burger-link">
