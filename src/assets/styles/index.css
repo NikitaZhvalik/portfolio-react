@@ -629,12 +629,12 @@ body {
 	}
 
 	.menu__header {
-		width: 180px;
-		margin-bottom: 20px;
+		width: 150px;
+		margin-bottom: 14px;
 
 		border-bottom: 2px solid #FFF;
 		color: #FFF;
-		font-size: 32px;
+		font-size: 26px;
 		text-align: center;
 	}
 
@@ -644,12 +644,12 @@ body {
 		align-items: center;
 
 		color: #FFF;
-		font-size: 22px;
+		font-size: 18px;
 		text-align: center;
 	}
 
 	.burger-link ~ .burger-link {
-		margin-top: 20px;
+		margin-top: 12px;
 	}
 
 	/* about */
