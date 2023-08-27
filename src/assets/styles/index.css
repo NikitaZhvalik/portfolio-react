@@ -571,21 +571,22 @@ body {
 		background-color: #000;
 		height: 2px;
 	}
-
-	.menu-active .burger-btn::before {
-		display: none;
-		/* transition-duration: 0.1s;
+	
+	.burger-active span{
+		transition-duration: 0.1s;
 		transition-delay: .25s;
-		background: transparent; */
+		background: transparent;
 	}
-	.menu-active .burger-btn span{
+
+	.burger-active::before {
 		transition: top .25s, transform .25s .25s;
-		top: 0px;
+		top: 50%;
 		transform: rotateZ(-45deg);
 	}
-	.menu-active .burger-btn::after {
+
+	.burger-active::after{
 		transition: top 0.4s, transform .25s .25s;
-		top: 0px;
+		top: 50%;
 		transform: rotateZ(45deg);
 	}
 
@@ -619,7 +620,7 @@ body {
 		width: 100vw;
 		height: 100vh;
 		background-color: #ffffff;
-		background-image: url(./../imgs/notFound/background-notFound.png);
+		background-image: url(./../imgs/menuBtn/background-menu.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -654,12 +655,14 @@ body {
 		margin-top: 20px;
 	}
 
+
+
 	
 	/* about */
 	.header {
 		padding: 30px;
 
-		background-image: url(./../imgs/header/background-burger-menu.svg), url(./../imgs/about/background-about.png);
+		background-image: url(./../imgs/menuBtn/background-btn-white.svg), url(./../imgs/about/background-about.png);
 		background-repeat: no-repeat;
 		background-position: top 5px left -35px, center;
 		background-size: 160px, cover;
@@ -704,7 +707,7 @@ body {
 		padding: 30px;
 		padding-bottom: 60px;
 
-		background-image: url(./../imgs/header/background-burger-menu.svg), url(./../imgs/skills/background-skills.png);
+		background-image: url(./../imgs/menuBtn/background-btn-white.svg), url(./../imgs/skills/background-skills.png);
 		background-repeat: no-repeat;
 		background-position: top 5px left -35px, center;
 		background-size: 180px, cover;
@@ -730,7 +733,7 @@ body {
 		padding: 30px;
 		padding-bottom: 60px;
 
-		background-image: url(./../imgs/header/background-burger-menu.svg), url(./../imgs/projects/background-projects.png);
+		background-image: url(./../imgs/menuBtn/background-btn-white.svg), url(./../imgs/projects/background-projects.png);
 		background-repeat: no-repeat;
 		background-position: top 5px left -35px, center;
 		background-size: 160px, cover;
@@ -755,7 +758,7 @@ body {
 		padding: 30px;
 		padding-bottom: 60px;
 
-		background-image: url(./../imgs/header/background-burger-menu.svg), url(./../imgs/contacts/background-contacts.png);
+		background-image: url(./../imgs/menuBtn/background-btn-white.svg), url(./../imgs/contacts/background-contacts.png);
 		background-repeat: no-repeat;
 		background-position: top 5px left -35px, center;
 		background-size: 160px, cover;
