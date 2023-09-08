@@ -520,7 +520,7 @@ body {
 /* not found */
 
 
-@media (max-width: 490px) {
+@media (max-width: 576px) {
 	/* burger-btn */
 	.burger-btn {
 		width: 30px;
@@ -636,6 +636,12 @@ body {
 		color: #FFF;
 		font-size: 22px;
 		text-align: center;
+
+		transition: scale ease-in 0.2s;
+	}
+
+	ul .burger-link:hover {
+		scale: 1.15;
 	}
 
 	.burger-link ~ .burger-link {
